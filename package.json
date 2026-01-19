@@ -1,27 +1,18 @@
 {
-  "name": "understanding-typescript",
-  "version": "1.0.0",
-  "description": "Understanding TypeScript Course Setup",
-  "main": "app.js",
-  "scripts": {
-    "dev": "vite",
-    "lint": "eslint src/**/*.ts",
-    "tslint": "eslint src/**/*.ts"
+  "dependencies": {
+    "typescript": "^5.8.3"
   },
-  "keywords": [
-    "typescript",
-    "course"
-  ],
-  "author": "Maximilian Schwarzmüller",
-  "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.1",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "typescript": "^4.9.5",
-    "vite": "^7.3.1"
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "tslint": "^5.20.1"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx,.js --ignore-path .eslintignore",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --ignore-path .eslintignore --fix",
+    "tslint": "npm run lint"
   }
 }
