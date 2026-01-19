@@ -1,6 +1,4 @@
-# TypeScript — ESLint setup
-
-This repo contains small TypeScript and JavaScript example files. ESLint is set up to lint both `.ts` and `.js` files.
+# Learn Typescript - tslint
 
 ## Quick commands
 
