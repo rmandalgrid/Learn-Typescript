@@ -8,9 +8,12 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "tslint": "^5.20.1"
+    "tslint": "^5.20.1",
+    "vite": "^7.3.1"
   },
   "scripts": {
+    "dev": "vite",
+    "start": "vite",
     "lint": "eslint . --ext .ts,.tsx,.js --ignore-path .eslintignore",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --ignore-path .eslintignore --fix",
     "tslint": "npm run lint"
